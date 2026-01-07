@@ -17,3 +17,20 @@ It uses a **function** and a **while loop** to allow the user to check multiple 
     - Enter `0` to quit the program.
 
 ---
+
+## Code Example
+
+```python
+def check_even_odd(num):
+    if num % 2 == 0:
+        return "Even"
+    else:
+        return "Odd"
+
+while True:
+    number = int(input("Enter a number (0 to quit): "))
+    if number == 0:
+        print("Exiting...")
+        break
+    result = check_even_odd(number)
+    print("The number is", result)
